@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+First FrontPanel Example
+Copyright (c) 2004, Opal Kelly Incorporated
+-->
+
+<resource version="2.3.0.1">
+
+<object class="okPanel" name="panel1">
+    <title>First FrontPanel Example</title>
+    <size>313,250</size>
+
+    <!-- Le Night Mode -->
+
+    <object class="okToggleButton">
+        <label>Night Mode</label>
+        <position> 5,5</position>
+        <size>100,20</size>
+        <endpoint>0x00</endpoint>
+        <bit>0</bit>
+    </object>
+
+    <!-- Le Reset -->
+
+    <object class="okToggleButton">
+        <label>Reset</label>
+        <position> 130,5</position>
+        <size>100,20</size>
+        <endpoint>0x00</endpoint>
+        <bit>3</bit>
+    </object>
+
+    <!-- Le Traffic Lights -->
+
+    <!-- North -->
+    <object class="okStaticBox">
+        <position>18,30</position>
+        <size>40,120</size>
+        <label>North</label>
+    </object>
+    <!-- Red -->
+    <object class="okLED">
+        <position>26,47</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#FF0000</color>
+        <endpoint>0x21</endpoint>
+        <bit>5</bit>
+    </object>
+    <!-- yellow -->
+    <object class="okLED">
+        <position>26,78</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#EDB200</color>
+        <endpoint>0x21</endpoint>
+        <bit>7</bit>
+    </object>
+    <!-- green -->
+    <object class="okLED">
+        <position>26,109</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#00ff00</color>
+        <endpoint>0x21</endpoint>
+        <bit>6</bit>
+    </object>
+
+    <!-- South -->
+    <object class="okStaticBox">
+        <position>76,30</position>
+        <size>40,120</size>
+        <label>South</label>
+    </object>
+    <object class="okLED">
+        <position>83,47</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#FF0000</color>
+        <endpoint>0x21</endpoint>
+        <bit>5</bit>
+    </object>
+    <object class="okLED">
+        <position>83,78</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#EDB200</color>
+        <endpoint>0x21</endpoint>
+        <bit>7</bit>
+    </object>
+    <object class="okLED">
+        <position>83,109</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#00ff00</color>
+        <endpoint>0x21</endpoint>
+        <bit>6</bit>
+    </object>
+
+    <!-- East -->
+    <object class="okStaticBox">
+        <position>134,30</position>
+        <size>40,120</size>
+        <label>East</label>
+    </object>
+    <object class="okLED">
+        <position>141,47</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#FF0000</color>
+        <endpoint>0x21</endpoint>
+        <bit>0</bit>
+    </object>
+    <object class="okLED">
+        <position>141,78</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#EDB200</color>
+        <endpoint>0x21</endpoint>
+        <bit>2</bit>
+    </object>
+    <object class="okLED">
+        <position>141,109</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#00ff00</color>
+        <endpoint>0x21</endpoint>
+        <bit>1</bit>
+    </object>
+
+    <!-- West -->
+    <object class="okStaticBox">
+        <position>192,30</position>
+        <size>40,120</size>
+        <label>West</label>
+    </object>
+    <object class="okLED">
+        <position>199,47</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#FF0000</color>
+        <endpoint>0x21</endpoint>
+        <bit>0</bit>
+    </object>
+    <object class="okLED">
+        <position>199,78</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#EDB200</color>
+        <endpoint>0x21</endpoint>
+        <bit>2</bit>
+    </object>
+    <object class="okLED">
+        <position>199,109</position>
+        <size>24,24</size>
+        <style>CIRCLE</style>
+        <color>#00ff00</color>
+        <endpoint>0x21</endpoint>
+        <bit>1</bit>
+    </object>
+
+    <!-- Walking Stuff -->
+        <object class="okToggleButton">
+        <label>North/South Walk Request</label>
+        <position>5,165</position>
+        <size>180,20</size>
+        <endpoint>0x00</endpoint>
+        <bit>1</bit>
+    </object>
+    <object class="okLED">
+        <position>200,165</position>
+        <size>15,15</size>
+        <style>CIRCLE</style>
+        <color>#FFFFFF</color>
+        <endpoint>0x21</endpoint>
+        <bit>8</bit>
+    </object>
+    <object class="okLED">
+        <position>220,165</position>
+        <size>15,15</size>
+        <style>CIRCLE</style>
+        <color>#ED400C</color>
+        <endpoint>0x21</endpoint>
+        <bit>9</bit>
+    </object>
+    <object class="okToggleButton">
+        <label>East/West Walk Request</label>
+        <position>5,200</position>
+        <size>180,20</size>
+        <endpoint>0x00</endpoint>
+        <bit>2</bit>
+    </object>
+    <object class="okLED">
+        <position>200,200</position>
+        <size>15,15</size>
+        <style>CIRCLE</style>
+        <color>#FFFFFF</color>
+        <endpoint>0x21</endpoint>
+        <bit>3</bit>
+    </object>
+    <object class="okLED">
+        <position>220,200</position>
+        <size>15,15</size>
+        <style>CIRCLE</style>
+        <color>#ED400C</color>
+        <endpoint>0x21</endpoint>
+        <bit>4</bit>
+    </object>
+    
+    
+</object>
+
+</resource>
