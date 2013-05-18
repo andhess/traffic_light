@@ -2,6 +2,7 @@
 
 This project was part of a lab done in with the Digital Logic class at Washington University in St. Louis.  My lab partner and I defined and then implemented the finite state machine in traffic_light_fsm.vhd.  We also built a test unit to make sure it behaved properly in test_traffic_light_fsm.vhd.  trafficController.xpf is an interface we created, it is just an xml file.
 
+The html files are just reports generated about the device.
 
 ## Finite State Machine
 The traffic light has the following features and functions:
